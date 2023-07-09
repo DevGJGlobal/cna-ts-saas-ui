@@ -112,3 +112,33 @@ export default function Home() {
     </>
   )
 }
+
+/*
+import { Box } from '@chakra-ui/react'
+import { AppShell, Sidebar, SidebarSection, NavItem } from '@saas-ui/react'
+
+const HomePage: React.FC = () => {
+  return <AppShell
+      navbar={
+        <Box as="header" borderBottomWidth="1px" py="2" px="4">
+          <label>Hello!</label>
+        </Box>
+      }
+      sidebar={
+        <Sidebar>
+          <SidebarSection>
+            <NavItem>Home</NavItem>
+            <NavItem>Settings</NavItem>
+          </SidebarSection>
+        </Sidebar>
+      }
+    >
+    <Box as="main" flex="1" py="2" px="4" overflowY="auto">
+      Your application content
+    </Box>
+    <link rel="stylesheet" href="/styles.css" />
+</AppShell>;
+};
+
+export default HomePage
+*/
