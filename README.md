@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repo was just created by doing the following:
 
-## Getting Started
+1. Run `npx create-next-app`. Enable Typescript.
+2. Run `npm i @saas-ui/react @chakra-ui/react @chakra-ui/next-js @emotion/react@^11 @emotion/styled@^11 framer-motion@^6`
+3. Wrap the primary `"Component"` in `_app.tsx `with `<SaasProvider>`
+4. Run `npm run dev`
+5. _Some_ of the styles from the create-next-app template disappear. See examples below.
+6. Also, index.tsx includes the [Basic AppShell example]([url](https://saas-ui.dev/docs/components/layout/app-shell#basic-shell)) from Saas-UI. Comment out Create-Next-App default homepage and uncomment the AppShell example. This renders without any of the elements being visible.
 
-First, run the development server:
+No changes have been made to package.json, nor any packages added. This is the default experience trying to integrate Saas-UI with the vanilla Create-Next-App example, now with Typescript enabled.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**Without SaasProvider**
+![image](https://github.com/saas-js/saas-ui/assets/127816255/1ff6450a-d102-4fa5-8d14-77f41ae9aa09)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**With SaasProvider**
+![image](https://github.com/DevGJGlobal/cna-ts-saas-ui-example/assets/127816255/f56f0830-7cad-4952-bba7-3d17d2610b01)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**App-Shell is invisible on page**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![image](https://github.com/DevGJGlobal/cna-ts-saas-ui-example/assets/127816255/583e3924-92f8-432a-acca-235a2aad0e61)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
